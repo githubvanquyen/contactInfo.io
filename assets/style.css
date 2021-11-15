@@ -1,0 +1,215 @@
+.container-fs{
+    width: 30%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.container-body{
+    padding: 0px 16px 16px 16px;
+    text-align: center;
+}
+.container-fs .container-anhbia{
+    width: 100%;
+    height: 200px;
+    background-color: #424DF0;
+    position: relative;
+    margin-bottom: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+.container-anhbia .container-avatar{
+    width: 50%;
+    margin: 50%;
+    transform: translate(-50%,-50% );
+    border-radius: 50%;
+    position: absolute;
+    border: 5px solid #fff;
+    
+}
+.container-body p{
+    text-align: left;
+    
+}
+.container-body p i{
+    margin-right: 16px;
+}
+.container-educaton{
+    opacity: 0.8;
+}
+.container-studied{
+    opacity: 0.8;
+}
+.container-home{
+    opacity: 0.8;
+}
+.container-interest{
+    width: 30%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.container-interest button{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: #424DF0;
+    color: #fff;
+}
+.container-interest .favorite{
+    border-radius: 5px 5px 0px 0px;
+}
+.container-interest .social{
+    border-radius: 0px 0px 5px 5px;
+}
+.container-interest button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.social-modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+    transition: ease-in-out 0.3s;
+}
+ .modal{
+    position: fixed;
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #FFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: updown linear .25s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+.menu{
+    list-style-type: none;
+    padding-left: 0;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%)
+}
+.menu li a{
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border-bottom: 1px solid white;
+    padding-left: 64px;
+    border-radius: 40px;
+    margin-bottom: 8px;
+}
+.link-1{
+    background-color: #3a45e2;
+}
+.link-2{
+    background-color: #f7390a;
+}
+.link-3{
+    background-color: #DD7326;
+}
+.link-4{
+    background-color: #000;
+}
+.menu li a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 10px;
+}
+.modal-close:hover{
+    cursor: pointer;
+    color: red;
+}
+.menu i{
+    margin-right: 16px !important;
+}
+.window-modal{
+    display: none;
+}
+.hiden{
+    display: block;
+}
+@keyframes updown{
+    from{
+        position: fixed;
+        width: 40%;
+        height: 300px;
+        border-radius: 10px;
+        background-color: #FFF;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.favorite-down{
+    padding: 16px;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+}
+.favorite-down i{
+    margin-right: 8px;
+}
+.fvr-btn{
+    padding: 8px 16px;
+    border: 1px solid lightgray;
+    display: inline-block;
+    color: #fff;
+    border-radius: 16px;
+    margin: 4px;
+}
+.fvr-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.open{
+    display: none;
+}
+.fvr-1{
+    background-color: #F73640;
+}
+.fvr-2{
+    background-color: #7826E0;
+}
+.fvr-3{
+    background-color: #3E92FF;
+}
+.fvr-4{
+    background-color: #E08F26;
+}
+@media screen and ( max-width: 768px){
+    .container-fs{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+    .container-interest{
+        width: 90%;
+    }
+    .container-fs .container-anhbia{
+        margin-bottom: 150px    ;
+    }
+    .modal{
+        width: 85%;
+    }
+}

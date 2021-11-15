@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+        <h1></h1>
+        <div class="container-fs">
+            <div class="container-anhbia">
+                <img src="./assets/imgs/avatar.jpg" alt="avatar" class="container-avatar">
+            </div>
+            <div class="container-body">
+                <h2>Văn Quyền</h2>
+                <p class="container-educaton"><i class="fas fa-university"></i>Học CNTT tại Đại Học Công Nghiệp Hà Nội</p>
+                <p class="container-studied"><i class="fas fa-graduation-cap"></i>Đã học tại THPT Nguyễn Du</p>
+                <p class="container-home"><i class="fas fa-home"></i>Sống tại Hải Dương</p>    
+            </div>
+          </div>
+        <div class="container-interest">
+            <button class="favorite">Sở thích</button>
+            <div class="favorite-down open">
+                <div class="fvr-1 fvr-btn"><i class="fas fa-film"></i>Xem phim</div>
+                <div class="fvr-2 fvr-btn"><i class="fas fa-music"></i>Nghe nhạc</div>
+                <div class="fvr-3 fvr-btn"><i class="fas fa-gamepad"></i>Choi game</div>
+                <div class="fvr-4 fvr-btn"><i class="fas fa-microphone-alt"></i>Ca hát</div>
+            </div>
+            <button class="social">Mạng xã hội</button>
+        </div>
+        <div class="window-modal">
+            <div class="social-modal"></div>
+            <div class="modal">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+                <ul class="menu">
+                    <li><a href="#" class="link-1"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#" class="link-2"><i class="fab fa-youtube"></i>Youtube</a></li>
+                    <li><a href="#" class="link-3"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#" class="link-4"><i class="fab fa-github"></i>Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var favorite = document.querySelector('.favorite');
+            var windowModal = document.querySelector('.window-modal');
+            var social = document.querySelector('.social');
+            var closeModal =document.querySelector('.modal-close');
+            var fvrDown= document.querySelector('.favorite-down');
+            function openFavorite() {
+                windowModal.classList.add('hiden');
+            }
+            social.addEventListener('click',openFavorite);
+            closeModal.addEventListener('click',function (){
+                windowModal.classList.remove('hiden');
+            })
+            var flag = true;
+            favorite.addEventListener('click',function (){
+                if(flag){
+                    fvrDown.classList.remove('open');
+                    flag = false;
+                }
+                else{
+                    fvrDown.classList.add('open');
+                    flag= true;
+                }
+                
+            })
+        </script>
+</body>
+</html>
